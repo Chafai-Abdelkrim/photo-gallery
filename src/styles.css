@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+
+:root {
+    --primary: #efb6b2;
+    --secondary: #4e4e4e;
+    --error: #ff4a4a;
+}
+
+/* base styles */
+body {
+    font-family: "Noto Serif";
+    color: var(--secondary);
+}
+.App {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* Title styles */
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+.Title svg {
+    color: var(--primary);
+    font-size: 2rem;
+}
+
+.Title h1 {
+    color: var(--primary);
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    font-weight: 900;
+    display: inline;
+}
+
+.Title h2, .Title p {
+    text-align: center;
+}
+
+.Title h2 {
+    margin-top: 4rem;
+    font-size: 2.5rem;
+}
