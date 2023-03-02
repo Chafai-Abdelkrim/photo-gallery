@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-
 const UploadForm = () => {
   const [file, setFile] = useState<any>(null);
   const [error, setError] = useState("");
