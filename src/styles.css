@@ -44,3 +44,16 @@ body {
     margin-top: 4rem;
     font-size: 2.5rem;
 }
+/* upload form style */
+form {
+    text-align: center;
+    margin: 30px auto 10px;
+}
+
+
+/* progress bar styles */
+.progress-bar {
+    height: 4px;
+    margin-top: 1.3rem;
+    background-color: var(--primary);
+}
