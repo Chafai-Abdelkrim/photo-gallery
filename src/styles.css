@@ -96,3 +96,28 @@ label:hover {
   margin-top: 1.3rem;
   background-color: var(--primary);
 }
+
+/* image grid styles */
+.img-grid {
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.img-wrap {
+  height: 0;
+  padding: 50% 0;
+  position: relative;
+  opacity: 0.8;
+  overflow: hidden;
+}
+
+.img-wrap img {
+  min-height: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
