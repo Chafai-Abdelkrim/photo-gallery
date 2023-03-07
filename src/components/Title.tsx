@@ -9,8 +9,7 @@ const Title = () => {
       </div>
       <h2>Your Photos</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis repellat
-        placeat.
+        FireGallery Is The Platform To Share Any Image You Like With The World.
       </p>
     </div>
   );
