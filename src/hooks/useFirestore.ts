@@ -15,7 +15,10 @@ const useFirestore = (cluster: any) => {
       querySnapshot.forEach((doc) => {
         documents.push({ ...doc.data(), id: doc.id });
       });
-      setDocs(documents);
+      const filteredDocs = Array.from(
+        new Set(documents.map((obj) => obj.name))
+      ).map((name) => documents.find((obj) => obj.name === name));
+      setDocs(filteredDocs);
     });
 
     return () => unsub();

@@ -10,7 +10,7 @@ const useStorage = (file: any) => {
   const [url, setUrl] = useState("");
   
   useEffect(() => {
-    const storageRef = ref(projectStorage, `images/${file.name}`);
+    const storageRef = ref(projectStorage, `${file.name}`);
     const uploadTask = uploadBytesResumable(storageRef, file);
 
     uploadTask.on(
@@ -25,6 +25,7 @@ const useStorage = (file: any) => {
       () => {
         getDownloadURL(uploadTask.snapshot.ref).then((url) => {
           addDoc(collection(projectFirestore, "images"), {
+            name: file.name,
             url: url,
             createdAt: serverTimestamp(),
           });
