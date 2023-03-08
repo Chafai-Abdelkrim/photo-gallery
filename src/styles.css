@@ -9,7 +9,7 @@
 /* base styles */
 body {
   font-family: "Noto Serif";
-  color: var(--secondary);
+  color: var(--secondary);background-color: rgb(247, 236, 217);
 }
 .App {
   max-width: 960px;
