@@ -149,3 +149,9 @@ label:hover {
   border: 3px solid aliceblue;
   border-radius: 1rem;
 }
+
+@media (max-width: 600px) {
+  .img-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
